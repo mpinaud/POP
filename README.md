@@ -33,7 +33,7 @@
 * D3.js/Observable
 
 ## Desktop Prototype
-![PDF](img/pop-desktop.pdf "Desktop Prototype")
+![PDF](img/pop-desktop.jpg "Desktop Prototype")
 
 ## Future Development Goals
 
