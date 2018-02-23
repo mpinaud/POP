@@ -1,4 +1,4 @@
-# POP!
+# P 🔴 P!
 
 #### A real time interactive data visualizer comparing the lifecycle of the top 20 trending Twitter tags. Watch the POP!
 
@@ -24,6 +24,7 @@
 
 * React
 * Redux
+* Jest
 * JavaScript
 * Moment.js
 * Firebase
@@ -31,12 +32,19 @@
 * Twitter API
 * D3.js/Observable
 
+## Desktop Prototype
+![PDF](img/pop-desktop.pdf "Desktop Prototype")
+
 ## Future Development Goals
 
 * Call an additional API source to give a description/random fact of the tag and add it to the Pop-file database. (Like VH1 Pop-Up Video)
 * User can sign in using their Twitter account, create a profile, and save current or Popped tags into their POP! profile.
 * During sign in user can be notified once current stored POP eventually POP!’s.
 * During sign in user can easily keep a POP alive by pressing a button that will append a Tweet form that will include the POP tag name an additional tag #POP!lifematters which will append into their Twitter feed.
+
+## Future Development Tools
+
+* MediaWiki API
 
 ## Setup/Installation Requirements
 
