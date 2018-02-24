@@ -16,6 +16,9 @@
 ### Component Legend
 ![PDF](img/readme/pop-component-legend.jpg "Component Legend")
 
+### Component Tree
+![PDF](img/readme/pop-component-tree.jpg "Component Tree")
+
 ### On Hover Example
 ![PDF](img/readme/pop-onhover.jpg "On Hover")
 
