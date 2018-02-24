@@ -11,10 +11,13 @@
 
 ## Prototypes
 ### Desktop
-![PDF](img/pop-desktop.jpg "Desktop Prototype")
+![PDF](img/readme/pop-desktop.jpg "Desktop Prototype")
 
 ### Component Legend
-![PDF](img/pop-component-legend.jpg "Component Legend")
+![PDF](img/readme/pop-component-legend.jpg "Component Legend")
+
+### On Hover Example
+![PDF](img/readme/pop-onhover.jpg "On Hover")
 
 ## Minimum Viable Product Breakdown
 
