@@ -19,6 +19,9 @@
 ### On Hover Example
 ![PDF](img/readme/pop-onhover.jpg "On Hover")
 
+### POP File History
+![PDF](img/readme/pop-history-page.jpg "History Page")
+
 ## Minimum Viable Product Breakdown
 
 * Meet the required endpoints to call from Twitter API for trend characteristics.
