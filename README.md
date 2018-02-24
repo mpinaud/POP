@@ -9,7 +9,7 @@
 
 #### Once an iteration is called and the tag is no longer within the current top 20 trend bracket, POP! The lifecycle is over. That Pop cycle’s POP! time and date will then be added to it’s Pop-file which then will finally be logged into a master database of all popped Pop-cycles. The user will then be able refer back to past POP!’s in the interactive master database. This data will include tag name, start date and time, start number of Twitter users, largest number of Twitter users, and bubble images including start percentage size, largest popularity size, iteration color with number of iterations, POP! size, date and time.
 
-## Prototypes
+## Prototyping
 ### Desktop
 ![PDF](img/readme/pop-desktop.jpg "Desktop Prototype")
 
