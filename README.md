@@ -46,7 +46,7 @@
 * Firebase
 * CSS
 * Twitter API
-* D3.js/Observable
+* D3.js
 
 ## Future Development Goals
 
