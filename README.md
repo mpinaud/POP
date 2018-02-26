@@ -59,20 +59,6 @@
 
 * MediaWiki API
 
-## Setup/Installation Requirements
-
-Clone or download repository:
-  1. Open [this page](https://github.com/mpinaud/POP) in web browser.
-  2. Under the repository name, click Clone or download.
-  3. In the Clone with HTTPs section, click to copy the clone URL for the repository.
-  4. Open Terminal.
-  5. Change the current working directory to the location where you want the cloned directory to be made (ex. cd desktop).
-  6. Type git clone, and then paste the URL you copied in Step 3. (ex. git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY).
-  7. Press Enter. Your local clone will be created.
-  8. Go into directory by entering cd POP in the terminal.
-  9. Install all dependencies by entering npm install in the terminal.
-  10. Open in your IDE.
-
 ## License
 
 Copyright (c) 2018, Mikey Pinaud
