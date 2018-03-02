@@ -1,10 +1,13 @@
 import React from 'react';
+import HomeLogo from './HomeLogo';
+import Hero from './Hero';
 
 function Header() {
   return (
     <div>
-      Header Works!!!
-    </div>    
+      <HomeLogo />
+      <Hero />
+    </div>
   );
 }
 
