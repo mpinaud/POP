@@ -59,7 +59,7 @@
 
 * MediaWiki API
 
-#### Notes
+## Notes
 
 * Create OAuth 2.0
   (Twitter offers applications the ability to issue authenticated requests on behalf of the application itself (as opposed to on behalf of a specific user). Twitter’s implementation is based on the Client Credentials Grant flow of the OAuth 2 specification. Note that OAuth 1.0a is still required to issue requests on behalf of users.)
