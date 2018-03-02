@@ -3,6 +3,7 @@ import HomeLogo from './HomeLogo';
 import Hero from './Hero';
 import PopObjectInfo from './PopObjectInfo';
 import HistoryButton from './HistoryButton';
+import SocialMedia from './SocialMedia';
 
 function Header() {
   return (
@@ -11,6 +12,7 @@ function Header() {
       <Hero />
       <PopObjectInfo />
       <HistoryButton />
+      <SocialMedia />
     </div>
   );
 }
