@@ -9,6 +9,7 @@ const Container = glamorous.div({
   flexDirection: 'row',
   justifyContent: 'space-between',
   width: '100%',
+  height: '100vh',
   border: 'solid 1px',
 });
 

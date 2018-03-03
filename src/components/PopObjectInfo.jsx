@@ -1,8 +1,16 @@
 import React from 'react';
+import glamorous from 'glamorous';
+
+const InfoDiv = glamorous.div({
+  width: '90%',
+  textAlign: 'center',
+  background: 'lightgrey',
+  borderRadius: '25px',
+});
 
 function PopObjectInfo() {
   return (
-    <div>
+    <InfoDiv>
       <h1>#IHeartAwards</h1>
       <ul>
         <li>D.O.B.</li>
@@ -11,7 +19,7 @@ function PopObjectInfo() {
         <li>Current Users</li>
         <li>Age</li>
       </ul>
-    </div>
+    </InfoDiv>
   );
 }
 

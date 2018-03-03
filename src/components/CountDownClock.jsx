@@ -3,7 +3,6 @@ import glamorous from 'glamorous';
 
 const Heading = glamorous.h1({
   fontSize: '20em',
-  marginTop: 10,
   color: '#CC3A4B',
 });
 

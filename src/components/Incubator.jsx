@@ -7,10 +7,20 @@ const IncubatorDiv = glamorous.div({
   border: 'solid 1px blue',
 });
 
+const ClockDiv = glamorous.div({
+  width: '100%',
+  height: '100%',
+  display: 'flex',
+  justifyContent: 'center',
+  alignItems: 'center',
+});
+
 function Incubator() {
   return (
     <IncubatorDiv>
-      <CountDownClock />
+      <ClockDiv>
+        <CountDownClock />
+      </ClockDiv>
     </IncubatorDiv>
   );
 }
