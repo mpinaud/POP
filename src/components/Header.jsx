@@ -9,7 +9,6 @@ import SocialMedia from './SocialMedia';
 const HeaderDiv = glamorous.div({
   width: '30%',
   height: '100%',
-  border: 'solid 1px green',
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'space-evenly',

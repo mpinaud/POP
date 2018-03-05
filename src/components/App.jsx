@@ -10,7 +10,7 @@ const Container = glamorous.div({
   justifyContent: 'space-between',
   width: '100%',
   height: '100vh',
-  border: 'solid 1px',
+  background: 'radial-gradient(white, lightgrey, grey)',
 });
 
 function App() {

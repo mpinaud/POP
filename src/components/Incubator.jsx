@@ -4,7 +4,6 @@ import glamorous from 'glamorous';
 
 const IncubatorDiv = glamorous.div({
   width: '70%',
-  border: 'solid 1px blue',
 });
 
 const ClockDiv = glamorous.div({
