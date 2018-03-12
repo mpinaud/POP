@@ -1,17 +1,17 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import axios from 'axios';
 
 class Twitter extends React.Component{
   authorize() {
     axios.post('http://localhost:3000/authorize', {'Content-Type': 'application/X-www-form-urlencoded'})
-    .then(res => {
-      console.log(res);
-    })
+      .then(res => {
+        console.log(res);
+      });
   }
 
   componentDidMount() {
-  this.authorize();
+    this.authorize();
   }
 
   render() {
