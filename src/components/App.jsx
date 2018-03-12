@@ -3,6 +3,7 @@ import Incubator from './Incubator';
 import Header from './Header';
 import glamorous from 'glamorous';
 import { reset } from 'glamor/reset';
+import Twitter from './Twitter';
 
 const Container = glamorous.div({
   display: 'flex',
@@ -17,6 +18,7 @@ function App() {
 
   return (
     <Container>
+      <Twitter/>
       <Incubator />
       <Header />
     </Container>
