@@ -2,7 +2,7 @@ import React from 'react';
 import Incubator from './Incubator';
 import Header from './Header';
 import glamorous from 'glamorous';
-import { reset } from 'glamor/reset';
+import Trends from './Trends';
 import Twitter from './Twitter';
 
 const Container = glamorous.div({
@@ -14,15 +14,23 @@ const Container = glamorous.div({
   background: 'radial-gradient(white, lightgrey, grey)',
 });
 
-function App() {
+class App extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+    };
+  }
 
-  return (
-    <Container>
-      <Twitter/>
-      <Incubator />
-      <Header />
-    </Container>
-  );
+  render() {
+    return (
+      <Container>
+        <Trends/>
+        <Twitter/>
+        <Incubator/>
+        <Header/>
+      </Container>
+    );
+  }
 }
 
 export default App;

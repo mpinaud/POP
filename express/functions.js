@@ -1,3 +1,4 @@
+/*eslint-disable */
 var request = require('request');
 var config = require('./config');
 
@@ -16,12 +17,13 @@ functions = {
         config.bearertoken = JSON.parse(body).access_token;
 
         res.json({success: true, data:config.bearertoken});
+        console.log('bearertoken', config.bearertoken);
       }
 
     });
   },
 
-  //might need it later
+  // might need it later
   search: function(req, res) {
     var searchquery = req.body.query;
     var encsearchquery = encodeURIComponent(searchquery);
@@ -49,4 +51,6 @@ functions = {
     });
   }
 };
+
 module.exports = functions;
+/*eslint-enable */

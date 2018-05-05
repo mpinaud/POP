@@ -1,51 +1,56 @@
 import React from 'react';
-// import PropTypes from 'prop-types';
 import axios from 'axios';
 
-class Twitter extends React.Component{
+class Twitter extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      header: [],
+      trends: []
+    };
+    this.handleFetchData = this.handleFetchData.bind(this);
+    console.log('this.state.header', this.state.header);
+  }
+
   authorize() {
     axios.post('http://localhost:3000/authorize', {'Content-Type': 'application/X-www-form-urlencoded'})
       .then(res => {
-        console.log(res);
+        console.log('res', res);
+        const authData = res.data.data;
+        console.log('authData', authData);
+        this.setState(this.state.header.push(authData));
       });
   }
 
-  componentDidMount() {
+  componentWillMount() {
     this.authorize();
   }
 
+  handleFetchData() {
+    let bearerheader = 'Bearer ' + this.state.header;
+    console.log('bearerheader', bearerheader);
+
+    fetch('https://api.twitter.com/1.1/trends/place.json?id=1', {headers: {Authorization: bearerheader}})
+      .then(results => {
+        return results.json();
+      }).then(data => {
+        let trends = data.results.map((trends) => {
+          return(
+            <div key={trends.results}>
+              <h1>{trends.name}</h1>
+            </div>
+          );
+        });
+        this.setState({trends: trends});
+      });
+    console.log('state', this.state.trends);
+  }
+
   render() {
-    console.log('Twitter component works');
     return(
-      <p>This is working</p>
+      <button onClick={this.handleFetchData}>TWITTER</button>
     );
   }
 }
 
-Twitter.propTypes = {
-};
-
 export default Twitter;
-
-
-// export class TwitterApiService {
-//   tweetsdata;
-//
-//   constructor(private http: Http) { }
-//
-//   postToObtainABearerToken() {
-//     var headers = new Headers();
-//     headers.append('Content-Type', 'application/X-www-form-urlencoded');
-//
-//     return this.http.post(
-//       'http://localhost:3000/authorize', { headers: headers }
-//     );
-//   }
-//
-//   getData() {
-//     var headers = new Headers();
-//     headers.append('Content-Type', 'application/X-www-form-urlencoded');
-//
-//     return this.http.post('http://localhost:3000/top', {headers: headers});
-//   }
-// }
