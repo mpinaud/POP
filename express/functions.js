@@ -17,9 +17,8 @@ functions = {
         config.bearertoken = JSON.parse(body).access_token;
 
         res.json({success: true, data:config.bearertoken});
-        console.log('bearertoken', config.bearertoken);
+        console.log('config', config);
       }
-
     });
   },
 
@@ -41,7 +40,8 @@ functions = {
   top: function(req, res) {
     var bearerheader = 'Bearer ' + config.bearertoken;
     console.log('bearerheader ' + bearerheader);
-    request.get('https://api.twitter.com/1.1/trends/place.json?id=1', {headers: {Authorization: bearerheader}}, function(error, body, response) {
+
+    request.get('https://api.twitter.com/1.1/trends/place.json?id=23424977', {headers: {Authorization: bearerheader}}, function(error, body, response) {
       if(error)
         console.log(error);
       else {
